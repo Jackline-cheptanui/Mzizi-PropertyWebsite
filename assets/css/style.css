@@ -51,20 +51,28 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   }
 }
 
-#header {
+#header{
   height: 72px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
+  /* background: rgba(255,255,255,0.9); */
   background: #fff;
+  fill: color transparent;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
+
 #header .logo h1 {
   font-size: 30px;
   margin: 0;
   line-height: 1;
   font-weight: 400;
   letter-spacing: 2px;
+}
+#take{
+  color: #00AEAE;
+  font-weight: bold;
+  font-size: 50px;
 }
 
 #header .logo img {
@@ -243,21 +251,21 @@ background-image: url(imagess/aerial-view-of-city-residential-area-with-high-apa
   margin-top: -10%;
 }
 .about.content h3 {
-width: 452px;
-height: 134px;
-left: 62px;
-top: 1054px;
-color: #00ADAD;
-font-family: 'Gilmer Heavy';
-font-style: normal;
-font-weight: 800;
-line-height: 99.52%;
-font-weight: bold;
+  font-size: 60px;
+  color: #00ADAD;
+  font-weight: 800;
+  line-height: 99.52%;
+  font-style: normal;
+}
+.about h3{
+  font-size: 56px;
+  color: #00ADAD;
+  font-weight: 800;
 }
 .fst-italic {
   color: #00ADAD;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 60px;
   font-weight: normal;
 
 
@@ -282,9 +290,9 @@ font-weight: bold;
 }
 
 .about .content h4{
-  color: #BBD338;
+  color: #00AEAE;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 26px;
 }
 .btn-get-demo{
   background: #BBD338;
@@ -303,9 +311,6 @@ font-weight: bold;
   }
 }
 /* end about section */
-
-
-/* featured section */
 #services{
   background-color: #BBD338;
   background-size: cover;
@@ -377,7 +382,74 @@ a{
 
 
 
-/* mzizi */
+
+/* #services{
+  background-color: #BBD338;
+  background-size: cover;
+  padding: 60px 0;  
+}
+.section-title h3 {
+	font-size: 4rem;
+	font-weight: 600;
+	color: white ;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+	letter-spacing: .1rem;
+	text-align: center;
+
+}
+.services .icon-box {
+  justify-content: center;
+  padding: 40px 20px;
+  transition: all ease-in-out 0.3s;
+  margin-left: 70%;
+}
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 5%;
+  height:5%;
+  background: #f1f6fe;
+  border: 1px solid #deebfd;
+  display: flex;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+}
+.services.icon-box .icon i {
+  font-size: 20px;
+  
+  
+  
+}
+.services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 20px;
+
+
+}
+.services .icon-box h4 a {
+  color: #00AEAE;
+  font-size: 15px;
+  display: inline-block;
+  transition: ease-in-out 0.3s;
+}
+.services.icon-box p {
+  color: white;
+  
+}
+
+p{
+  color: white;
+ 
+
+
+}
+a{
+  color: white;
+}
+.containers{
+  background: #00AEAE;
+} */
 
 .mzizi{
   background-color: #00ADAD;
@@ -386,21 +458,20 @@ a{
 }
 
 .mzizi .content h4 {
-  font-weight: 600;
-  font-size: 30px;
-  color: white;
-  margin-top: 20%;
-  font-weight: bold;
+  color: #fff;
+  font-size: 64px;
+  font-weight: 900;
+  margin-top: 18%;
 }
 .mzizi img{
   margin-top: 50px;
   height: 70%;
-
 }
+
 .mzizi .content h6{
   color: white;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 30px;
 }
 #page-get-demo {
   margin-left: 22px;
@@ -457,7 +528,6 @@ a{
 #cta #cta-button:hover {
   background: #fff;
 }
-
 .communication {
   background:#BBD338 ;
   background-size: cover;
@@ -470,7 +540,7 @@ a{
 }
 .communication p {
   color: #fff;
-  font-size: 25px;
+  font-size: 20px;
 }
 .communication .communication-btn {
   font-family: "Raleway", sans-serif;
@@ -490,7 +560,6 @@ a{
   color: #fff;
   
 }
-
 /* social media link */
 
 .newsletter {
@@ -506,7 +575,8 @@ a{
 }
 .newsletter h2{
   color:#00AEAE ;
-  margin-left: 15%;
+  margin-left: 16%;
+  text-align: center;
 }
 .newsletter input{
 	margin-left: 28%;
@@ -596,6 +666,11 @@ footer .app{
 }
 /* media quarry section */
 @media only screen and (max-width: 842px){
+  #take{
+    color: #00AEAE;
+    font-weight: bold;
+    font-size: 50px;
+  }
   .home {
     width: 200px;
     height: 100px;
@@ -607,10 +682,6 @@ footer .app{
     width: 350px;
     height: 250px;
     border-radius: 6px;
-    /* margin-right: 20; */
-    /* left: 0; */
-    /* margin-top: 50px; */
-    /* opacity: 0.7; */
     background: #00AEAE;
     top: 10%;
   }
